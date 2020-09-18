@@ -1,17 +1,15 @@
 body{
     margin:0px;
-    background-image: url(jp.png);¨
+    background-image: url(/Uppgift/jp.png);
     
-
-
 }
+
 .container {
-    display :grid;
+    display:grid;
     grid-template-columns: 1fr;
     border-style:solid;
     border-color:pink;
     border-width: medium;
-    
 }
 
 .man {  
@@ -60,7 +58,6 @@ body{
     text-transform: uppercase;
     justify-content: space-between;
     display: flex;
-    padding: ;
 }
 .center-link{
     height: 25px;
