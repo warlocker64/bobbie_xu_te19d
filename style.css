@@ -1,0 +1,114 @@
+body{
+    margin:0px;
+    background-image: url(jp.png);¨
+    
+
+
+}
+.container {
+    display :grid;
+    grid-template-columns: 1fr;
+    border-style:solid;
+    border-color:pink;
+    border-width: medium;
+    
+}
+
+.man {  
+    display:flex;
+    justify-content: space-between;
+    padding: 45px;
+    
+
+}
+.left-side {
+    display: flex;
+}
+.man >.left-side>div{
+    margin-right: 20px;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+.man-link {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+
+}
+ .man-link a {
+     color: pink;
+     text-decoration: none;
+     transition: 0.5s;
+ }
+
+ .man-link:hover {
+     border-bottom: 1px solid silver;
+
+ }
+ .man-link:hover a {
+    color: silver;
+    
+}
+.woman {
+    color:pink;
+    text-transform: uppercase;
+    
+    
+}
+.center {
+    text-transform: uppercase;
+    justify-content: space-between;
+    display: flex;
+    padding: ;
+}
+.center-link{
+    height: 25px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+    display: flex;
+    
+}
+.center-link a{
+    color: pink;
+    text-decoration: none;
+    transition: 0.5s;
+
+    
+}
+.center-link:hover {
+    border-bottom: 1px solid silver;
+
+}
+.center-link:hover a {
+    color:silver;
+
+}
+.text {
+    color: plum;
+    padding:80px;
+    border-style: solid;
+    border-color: pink;
+    border-width:medium;
+    border-top:transparent;
+
+}
+.yes {
+    position: under;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.yes .text {
+    position:under;
+    bottom:0;
+    background: rbg(0,0,0);
+    background: rbga(0,0,0,0.5);
+    color: silver;
+    width: 100%;
+    padding: 20px;
+
+}
+.link {
+    color: silver;
+    font-size: large;
+}
