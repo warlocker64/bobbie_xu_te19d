@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+}
+.container {
+    display: flex;
+
+}
+
+.item {
+    flex-grow: 1;
+    height: 20vh;
+    background-image:url(https://media1.giphy.com/media/Gb0fYjAiMvNVC/giphy.gif) ;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 300%;
+    text-decoration: none;
+    
+
+
+
+
+}
+a {
+    color: white;
+    text-decoration: none;
+    transition: text-decoration 0.5s;
+    
+
+}
+
+
+.item + .item {
+    margin-left: 2%;
+}
+
+.item :hover {
+    color:white;
+    background-size: 100;
+    text-decoration: underline;
+    transition: text-decoration 1s;
+
+
+
+    
+}
+.box {
+    -webkit-background-clip: text;
+    text-align: center;
+    background-image:url(https://media1.giphy.com/media/Gb0fYjAiMvNVC/giphy.gif);
+    font-size: 1000%;
+    color: transparent;
+}
+.a :hover {
+    color: black;
+    
+}
