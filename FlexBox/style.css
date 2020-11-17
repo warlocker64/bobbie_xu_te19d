@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: black;    
 }
 .container {
     display: flex;
@@ -11,24 +11,21 @@ body {
     height: 20vh;
     background-image:url(https://media1.giphy.com/media/Gb0fYjAiMvNVC/giphy.gif) ;
     text-align: center;
-    text-transform: uppercase;
+    text-transform: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 300%;
     text-decoration: none;
     background-repeat: no-repeat;
     background-size: 100%;
 
-    
-
-
 
 
 
 }
 a {
-    color: white;
-    text-decoration: none;
+    text-decoration:none;
     transition: text-decoration 0.5s;
+    color:black;
     
 
 }
@@ -41,7 +38,7 @@ a {
 .item :hover {
     color:white;
     background-size: 100;
-    text-decoration: underline;
+    text-decoration:underline;
     transition: text-decoration 1s;
 
 
@@ -66,13 +63,64 @@ a {
     background-size:95%;
     background-position: center;
     display: flex;
+
+
+
    
+}
+.items :hover {
+    color:white;
+    text-decoration:underline;
+
+
+
+    
+    
 }
 .items {
     flex-grow:1;
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
+    text-transform: none;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 
 
     
 }
+.shoppingcart {
+    background-image: url(https://image.flaticon.com/icons/png/512/126/126083.png);
+    background-size: 130px;
+    background-repeat: none;
+    width: 10%;
+    background-position: left;
+    display: flex;
+    height: 90%;
+    background-position: left;
+    
+}
+@import url('https://fonts.googleapis.com/css?family=Orbitron');
+#clock {
+     -webkit-background-clip: text;
+    font-family: 'Orbitron', sans-serif;
+    color:transparent;
+    font-size: 69px;
+    text-align:center;
+    justify-content: center;
+    width: 100%;
+    background-image: url(https://media1.giphy.com/media/Gb0fYjAiMvNVC/giphy.gif);
+    background-position: top;
+}
+.text {
+    color:transparent;
+    font-size: 400%;
+    text-align: center;
+     -webkit-background-clip: text;
+    background-image: url(https://media1.giphy.com/media/Gb0fYjAiMvNVC/giphy.gif);
+    background-position: top;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+
