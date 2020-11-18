@@ -4,7 +4,7 @@ function showTime() {
   let hour = time.getHours();
   let min = time.getMinutes();
   let sec = time.getSeconds();
-  am_pm = "AM";
+  am_pm = "AM"; //import time banger
   
   if (hour > 12) {
     hour -= 12;
