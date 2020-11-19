@@ -1,5 +1,5 @@
 body {
-    background-color: black;    
+    background-color: black;   
 }
 .container {
     display: flex;
@@ -21,6 +21,7 @@ body {
 
 
 
+
 }
 a {
     text-decoration:none;
@@ -38,8 +39,15 @@ a {
 .item :hover {
     color:white;
     background-size: 100;
-    text-decoration:underline;
-    transition: text-decoration 1s;
+    border-bottom: 2px solid;
+    transition:all 0.8s ease 0s;
+
+
+
+
+      
+
+
 
 
 
@@ -74,7 +82,10 @@ a {
 }
 .items :hover {
     color:white;
-    text-decoration:underline;
+    border-bottom: 2px solid;
+    transition: all 0.5s ease 0s;
+
+ 
 
 
 
@@ -127,8 +138,14 @@ a {
 
 
 
-}
 
+}
+.text:hover {
+    color: red;
+    transition:all 2s ease 0s;
+    
+
+}
 audio {
     width: 100%;
 
