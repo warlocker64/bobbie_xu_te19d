@@ -1,9 +1,99 @@
 .text {
-    text-align:center;
-    font-size: 300%;
-    font-style: inherit;
-    border-bottom: solid black;
+    text-align:center; /*Making the text at the center*/
+    font-size: 300%; /*Size of text*/
+    font-style: inherit; /*What kind of style for the text*/ 
+    border-bottom: 2px solid yellow; /* the color for the border*/
+    color:orange; /*text color */
 
 }
+.dropbtn { /*Changing the color,size,smoothing the sides of the meny*/
+    background-color:orange;
+    color:white;    
+    border: none;
+    font-size: 140%;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 5px;  
+}
+
+.dropdown { /*Changing the dropdown meny's form. Smoothing it and making it just look better */
+    position: relative;
+    display: inline-block;
+    transition: 0.5s;
+    -webkit-transition: height 2s;
+    border-radius: 5px;
+}
+.dropdown-content {/* Color of the dropdown meny size,some shadow, Adding so all text are capitalize */
+    display:none;
+    position: absolute;
+    background-color:orange;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    transition: 0.5s;
+    text-transform: capitalize;
+    border-radius: 5px;
+
+}
+.dropdown-content a { /* The text color of the dropdown meny changing the size */
+    color:white;
+    padding:5px 1px;
+    text-decoration: none;
+    display: block;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.dropdown-content a:hover { /*changing the color and the smoothness when hovering the dropdown meny */
+    background-color:yellow;
+    transition: 0.5s;
+    border-radius: 5px;
+
+}
+
+.dropdown:hover .dropdown-content { /*When hovering looking hella good */
+    display:block;
+    transition:0.5s;
+}
+
+.dropdown:hover .dropbtn { /* Hovering the Meny color and transition FOR SMOOTHnes */
+    background-color:yellow;
+    transition: 0.5s;
+}
+
+.text2 {
+    color:yellow;
+}
+
+.bottom-text {
+    color: orange;
+}
+html { /* When scrolling Making IT HellA SMOooooooth */
+    scroll-behavior: smooth;
+}
+
+#myBtn{ /* Color and the looks for the button*/
+    top:10px;
+    left: 5px;
+    display:none;
+    z-index :99px;
+    border:none;
+    outline:none;
+    background-color: orange;
+    color:white;
+    cursor: pointer;
+    position: fixed;
+    font-size: 16px;
+    border-radius: 5px;
+    
+
+
+}
+
+#myBtn:hover { /* Hovering color for button*/
+    background-color: yellow;
+    transition: 0.5s;
+
+}
+
 
 

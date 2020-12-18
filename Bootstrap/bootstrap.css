@@ -60,7 +60,7 @@ body {
   line-height: 1.5;
   color:rgb(0, 0, 0);
   text-align: left;
-  background-color: #fff;
+  background-image: url("https://cdn.discordapp.com/attachments/779407613296508960/784529006703149086/image0.jpg");
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -78,12 +78,14 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
   text-decoration:underline;
   text-transform: capitalize;
+  color: orange;
   
 }
 
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  color: yellow;
 }
 
 abbr[title],
@@ -111,7 +113,7 @@ dl {
 }
 
 ol ol,
-ul ul,
+ul ,
 ol ul,
 ul ol {
   margin-bottom: 0;
@@ -6092,6 +6094,7 @@ a.close.disabled {
   border-top: 1px solid #dee2e6;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
+  border-color: orange;
 }
 
 .modal-footer > * {
