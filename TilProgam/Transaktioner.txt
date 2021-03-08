@@ -1,0 +1,4 @@
+The change: 1000 kr Antal pengar: 1000 kr
+The change: -500 kr Antal pengar: 500 kr
+The change: 4000 kr Antal pengar: 4500 kr
+The change: -1 kr Antal pengar: 4499 kr
