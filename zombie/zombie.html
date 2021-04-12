@@ -4,16 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Poggers.</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+     
 <body>
-    <source>
-        <script src="https://koda.nu/simple.js">
 
-            circle(100, 100, 20, "red");
+    <h1>Press Space För Att Stoppa Spelet</h1>
+    <script src="http://spelprogrammering.nu/simple.js">
+
+    var zombies = [];
+
+    var i = 0;
+
+    while (i < 15)
+    {
+        zombies.push({x: random(totalWidth),
+                      y: random(totalHeight),
+                      speed: random(1,20)});
+
+        i += 1;
+    }
+
+    function update()
+    {
+        clearScreen();
+
+        var i = 0;
+
+        while (i < 15)
+        {
+            var zombie = zombies[i];
+
+            picture(zombie.x, zombie.y, "poggers.png");
+            if (keyboard.space){
+                stopUpdate();
+                document.body.style.backgroundImage = "url('https://qph.fs.quoracdn.net/main-qimg-162e707e3516564336d1d658f50676e4')";
+                var audio = new Audio('Dansen.mp4');
+                audio.play();
+                audio.volume = 0.01
+                }  
+    
+
+
+            if (zombie.x < mouse.x)
+             zombie.x += zombie.speed;
+            else
+             zombie.x -= zombie.speed;
+   
+            if (zombie.y < mouse.y)
+             zombie.y += zombie.speed;
+            else
+             zombie.y -= zombie.speed;
+
+            if (distance(mouse, zombie) < 5)
+            {
+                alert("Game over");
+                stopUpdate();
+                location.reload();  
+            }
           
-        </script>
-    </source>
+            i += 1;
+        }
+    }
+</script>
+
 
 </body>
 </html>
