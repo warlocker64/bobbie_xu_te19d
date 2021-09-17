@@ -1,38 +1,46 @@
 
 @import './variables'; //Import varibles.sccs i style.scss.
 
-body{
-    background-image: url(Sam.jpg);
-    background-size: cover;
-    background-position: center;
+*{
+    margin: 0;
+    padding: 0;
+}
+.header{
+    @include header;
+    
+}
+.title a{
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
     -webkit-animation: colorchange 20s infinite alternate;
     @-webkit-keyframes colorchange{
         0%{
-            color:blue;
+            color:rgb(27, 154, 228);
         }
         10%{
-            color:red;
+            color:cornflowerblue;
         }
         20%{
-            color:yellow;
+            color:lightblue;
         }
         30%{
-            color:green;
+            color:hotpink;
         }
         40%{
-            color:lime;
+            color:indianred;
         }
         50%{
             color:purple;
         }
         60%{
-            color:blue;
+            color:fuchsia;
         }
         70%{
-            color:lightblue;
+            color:lightcyan;
         }
         80%{
-            color:orange;
+            color:lemonchiffon;
         }
         90%{
             color:plum;
@@ -43,73 +51,45 @@ body{
 
     }
 }
-.free{
-    @include align();
+.title a::after{
+    @include hover1;
+
+}
+.title a:hover::after{
+    width: 100%;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: white;
     text-decoration: none;
-
-
+    font-size: 13px;
 }
-.text1 {
-    @include text;
-    color: red;
+.nav-links ul li::after{
+    @include hover1;
 }
-.text2 {
-    @include text;
-    color: blue;
+.nav-links ul li:hover::after{
+    width: 100%;
 }
-.text3 {
-    @include text;
-    color: yellow;  
-}
-.text4 {
-    @include text;
-    color: orange;
-}
-.text5 {
-    @include text;
-    color: green;
-}
-.text6 {
-    @include text;
-    color: plum;
-}
-
-
-
-.among1 {
-    @include amongborder;
-    background:red;
-    color: red;
-
-}
-.among2 {
-    @include amongborder;
-    background:blue;
-    color: blue;
-}
-.among3 {
-    @include amongborder;
-    background: yellow;
-    color: yellow;
-
-    
-
-}
-.among4 {
-    @include amongborder;
-    background:orange;
-    color:orange;
-}
-.among5 {
-    @include amongborder;
-    background: green;
-    color: green;
-}
-.among6 {
-    @include amongborder;
-    background: plum;   
-    color: plum;
-}
-.among7 {
-    @include amongborder;
+.text1{
+    width: 90%;
+    color: white;
+    position: absolute;
+    text-align: center;
+    left: 5%;
+    bottom: 60%;
 }
