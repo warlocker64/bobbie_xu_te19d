@@ -12,7 +12,15 @@
     
 
 }
-
+@mixin colors {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
 
 @mixin hover1 {
     width: 0%;

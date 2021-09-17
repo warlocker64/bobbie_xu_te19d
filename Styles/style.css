@@ -32,13 +32,13 @@
     color: hotpink;
   }
   40% {
-    color: indianred;
+    color: #a4eba4;
   }
   50% {
-    color: purple;
+    color: #a060db;
   }
   60% {
-    color: fuchsia;
+    color: palevioletred;
   }
   70% {
     color: lightcyan;
@@ -152,12 +152,30 @@ nav {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
   position: relative;
-  background-image: url(https://images.hdqwalls.com/wallpapers/line-strips-bright-red-4k-fx.jpg);
-  color: red;
+  background-image: url(Back22.jpg);
+  margin: auto;
+  color: silver;
 }
 
 .color1 p {
   width: 50%;
   margin: auto;
+}
+
+.color2 {
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  position: relative;
+  background: url(Neon.jpg) no-repeat center center fixed;
+  background-position: bottom;
+  margin: auto;
+  background-size: cover;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

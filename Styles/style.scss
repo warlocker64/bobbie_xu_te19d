@@ -33,13 +33,13 @@
             color:hotpink;
         }
         40%{
-            color:indianred;
+            color:rgb(164, 235, 164);
         }
         50%{
-            color:purple;
+            color:rgb(160, 96, 219);
         }
         60%{
-            color:fuchsia;
+            color:palevioletred;
         }
         70%{
             color:lightcyan;
@@ -114,18 +114,26 @@ nav{
  }
 
  .color1{
-    position: absolute;
-    background-size: cover;
-    width: 100%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
+    @include colors;
     @include header;            
-    background-image: url(https://images.hdqwalls.com/wallpapers/line-strips-bright-red-4k-fx.jpg);
-    color:red;
+    background-image: url(Back22.jpg);
+    margin: auto;
+    color:silver;
 }
 .color1 p{
     width: 50%;
     margin: auto;
+}
+.color2{
+    @include colors;
+    @include header;
+    background: url(Neon.jpg) no-repeat center center fixed;
+    background-position: bottom;
+    margin: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
 }
  
