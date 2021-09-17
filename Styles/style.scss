@@ -7,6 +7,11 @@
 }
 .header{
     @include header;
+    background: url(https://thetalkingtable.in/wp-content/uploads/2020/06/1713248.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     
 }
 .title a{
@@ -91,5 +96,36 @@ nav{
     position: absolute;
     text-align: center;
     left: 5%;
-    bottom: 60%;
+    bottom:42%;
+    margin: auto;
 }
+.text1 h1 {
+    font-size: 40px;
+}
+.text1 p {
+    margin: 10 0 40px;
+    font-size: 14px;
+}
+
+ @media(max-width: 700px){
+     .text1 h1{
+         font-size: 40px;
+     }
+ }
+
+ .color1{
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    @include header;            
+    background-image: url(https://images.hdqwalls.com/wallpapers/line-strips-bright-red-4k-fx.jpg);
+    color:red;
+}
+.color1 p{
+    width: 50%;
+    margin: auto;
+}
+ 
