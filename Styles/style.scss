@@ -121,7 +121,7 @@ nav{
     @include mall;            
     margin: auto;
     color: pink;
-    background: white;
+    background-color: white;
     
 }
 .mall1 p{
@@ -160,22 +160,15 @@ i{
     font-size: 40px;
     padding: 55px;
     left: 30px;
-    
-    
-    
 }
 
 .mall1 h3{
-    border-top: solid;
-    padding: 10px;
-    position: absolute;
+    @include borderlast;
     left: 40px;
     
 }
 .ocean p {
-    border-top: solid;
-    padding: 10px;
-    position: absolute;
+    @include borderlast;
     left: 15cm;
 }
 
