@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+div {
+  position: relative;
+}
+
 .header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
@@ -216,7 +220,7 @@ nav {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
   position: relative;
-  background: url(./Imgs/yellowbackground.jpg) no-repeat center center fixed;
+  background: url(./Imgs/Yellowbackground.jpg) no-repeat center center fixed;
   background-position: bottom;
   margin: auto;
   background-size: cover;
@@ -226,5 +230,25 @@ nav {
 .color3 p {
   width: 50%;
   margin: auto;
+}
+
+i {
+  font-size: 40px;
+  padding: 55px;
+  left: 30px;
+}
+
+.mall1 h3 {
+  border-top: solid;
+  padding: 10px;
+  position: absolute;
+  left: 40px;
+}
+
+.ocean p {
+  border-top: solid;
+  padding: 10px;
+  position: absolute;
+  left: 15cm;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,6 +5,9 @@
     margin: 0;
     padding: 0;
 }
+div{
+    position: relative;
+}
 .header{
     @include header;
     background: url('./Imgs/mainbackground.jpg') no-repeat center center fixed; 
@@ -119,9 +122,11 @@ nav{
     margin: auto;
     color: pink;
     background: white;
+    
 }
 .mall1 p{
     @include ptext;
+
 }
 .color1 p{
     @include ptext;
@@ -144,10 +149,36 @@ nav{
 .color3{
     @include colors;
     @include header;
-    background: url(./Imgs/yellowbackground.jpg) no-repeat center center fixed;
+    background: url(./Imgs/Yellowbackground.jpg) no-repeat center center fixed;
     @include textfix;
 }
 .color3 p {
     @include ptext;
 }
+i{
+    
+    font-size: 40px;
+    padding: 55px;
+    left: 30px;
+    
+    
+    
+}
+
+.mall1 h3{
+    border-top: solid;
+    padding: 10px;
+    position: absolute;
+    left: 40px;
+    
+}
+.ocean p {
+    border-top: solid;
+    padding: 10px;
+    position: absolute;
+    left: 15cm;
+}
+
+
+
  
