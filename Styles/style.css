@@ -7,7 +7,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
   position: relative;
-  background: url(https://thetalkingtable.in/wp-content/uploads/2020/06/1713248.jpg) no-repeat center center fixed;
+  background: url("./Imgs/mainbackground.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -123,7 +123,7 @@ nav {
   position: absolute;
   text-align: center;
   left: 5%;
-  bottom: 42%;
+  bottom: 30%;
   margin: auto;
 }
 
@@ -142,6 +142,31 @@ nav {
   }
 }
 
+.mall1 {
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 25vh;
+  position: relative;
+  margin: auto;
+  color: pink;
+  background: white;
+}
+
+.mall1 p {
+  width: 50%;
+  margin: auto;
+}
+
+.color1 p {
+  width: 50%;
+  margin: auto;
+}
+
 .color1 {
   position: absolute;
   background-size: cover;
@@ -152,14 +177,11 @@ nav {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
   position: relative;
-  background-image: url(Back22.jpg);
+  background: url(.//Imgs/Redbackground.jpg) no-repeat center center fixed;
+  background-position: bottom;
   margin: auto;
-  color: silver;
-}
-
-.color1 p {
-  width: 50%;
-  margin: auto;
+  background-size: cover;
+  color: white;
 }
 
 .color2 {
@@ -172,10 +194,37 @@ nav {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
   position: relative;
-  background: url(Neon.jpg) no-repeat center center fixed;
+  background: url(./Imgs/BlueBackground.jpg) no-repeat center center fixed;
   background-position: bottom;
   margin: auto;
   background-size: cover;
   color: white;
+}
+
+.color2 p {
+  width: 50%;
+  margin: auto;
+}
+
+.color3 {
+  position: absolute;
+  background-size: cover;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  position: relative;
+  background: url(./Imgs/yellowbackground.jpg) no-repeat center center fixed;
+  background-position: bottom;
+  margin: auto;
+  background-size: cover;
+  color: white;
+}
+
+.color3 p {
+  width: 50%;
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

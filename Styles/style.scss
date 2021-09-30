@@ -7,7 +7,7 @@
 }
 .header{
     @include header;
-    background: url(https://thetalkingtable.in/wp-content/uploads/2020/06/1713248.jpg) no-repeat center center fixed; 
+    background: url('./Imgs/mainbackground.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -96,7 +96,7 @@ nav{
     position: absolute;
     text-align: center;
     left: 5%;
-    bottom:42%;
+    bottom:30%;
     margin: auto;
 }
 .text1 h1 {
@@ -113,27 +113,41 @@ nav{
      }
  }
 
- .color1{
-    @include colors;
-    @include header;            
-    background-image: url(Back22.jpg);
+ .mall1{
+    @include mallposition;
+    @include mall;            
     margin: auto;
-    color:silver;
+    color: pink;
+    background: white;
+}
+.mall1 p{
+    @include ptext;
 }
 .color1 p{
-    width: 50%;
-    margin: auto;
+    @include ptext;
+}
+.color1{
+    @include colors;
+    @include header;
+    background: url(.//Imgs/Redbackground.jpg) no-repeat center center fixed;
+    @include textfix;
 }
 .color2{
     @include colors;
     @include header;
-    background: url(Neon.jpg) no-repeat center center fixed;
-    background-position: bottom;
-    margin: auto;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    color: white;
+    background: url(./Imgs/BlueBackground.jpg) no-repeat center center fixed;
+    @include textfix;
+}
+.color2 p{
+    @include ptext;
+}
+.color3{
+    @include colors;
+    @include header;
+    background: url(./Imgs/yellowbackground.jpg) no-repeat center center fixed;
+    @include textfix;
+}
+.color3 p {
+    @include ptext;
 }
  

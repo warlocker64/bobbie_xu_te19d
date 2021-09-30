@@ -8,9 +8,13 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
     position: relative;
+}
+@mixin mall {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 25vh;
+    position: relative;
 
     
-
 }
 @mixin colors {
     position: absolute;
@@ -19,6 +23,30 @@
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    
+}
+@mixin mallposition {
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    
+}
+@mixin ptext {
+    width: 50%;
+    margin: auto;
+    
+}
+@mixin textfix {
+    background-position: bottom;
+    margin: auto;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
     
 }
 
@@ -30,6 +58,6 @@
     height: 2px;
     margin: auto;
     transition: 0.5s;
-    
+
 }
  
