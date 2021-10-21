@@ -128,21 +128,23 @@ nav{
     @include ptext;
 
 }
-.color1 p{
-    @include ptext;
-}
 .color1{
     @include colors;
     @include header;
     background: url(.//Imgs/Redbackground.jpg) no-repeat center center fixed;
     @include textfix;
 }
+.color1 p{
+    @include ptext;
+}
+
 .color2{
     @include colors;
     @include header;
     background: url(./Imgs/BlueBackground.jpg) no-repeat center center fixed;
     @include textfix;
 }
+
 .color2 p{
     @include ptext;
 }

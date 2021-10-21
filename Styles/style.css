@@ -166,11 +166,6 @@ nav {
   margin: auto;
 }
 
-.color1 p {
-  width: 50%;
-  margin: auto;
-}
-
 .color1 {
   position: absolute;
   background-size: cover;
@@ -186,6 +181,11 @@ nav {
   margin: auto;
   background-size: cover;
   color: white;
+}
+
+.color1 p {
+  width: 50%;
+  margin: auto;
 }
 
 .color2 {
