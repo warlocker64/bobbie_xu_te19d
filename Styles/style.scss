@@ -5,22 +5,24 @@
     margin: 0;
     padding: 0;
 }
+
 div{
     position: relative;
+    //Tar i gruppen "Div" och placerar det "Relative"
 }
 .header{
-    @include header;
+    @include header; //Lägger till Mixin
     background: url('./Imgs/mainbackground.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
+    //Include header och sedan lägger till en background för "Header" även gör så att background täcker hela sidan.
 }
 .title a{
-    text-decoration: none;
-    color: black;
-    font-size: 35px;
+    text-decoration: none; //Tarbort decoration från texten i "Title a"
+    color: black; //Färgen för texten a
+    font-size: 35px; // Ändrar storlek för texten a
     -webkit-animation: colorchange 20s infinite alternate;
     @-webkit-keyframes colorchange{
         0%{
@@ -59,39 +61,50 @@ div{
 
     }
 }
+//Skapar en animation för Titlen i min sida som ändrar färg under 20s "inf"
 .title a::after{
     @include hover1;
+    //Include hover1 effect från mixin
 
 }
+
 .title a:hover::after{
     width: 100%;
+    //Denna funktion expanar när man hover över (title a)
 }
 nav{
     display: flex;
     padding: 2% 6%;
     justify-content: space-between;
     align-items: center;
+    //Fixar position för Nav och centerar den. Även lägger till Padding
 }
 .nav-links{
     flex: 1;
     text-align: right;
+    // Lägger alla nav-links till höger
+
 }
 .nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
+    //fixar nav links positions 
 }
 .nav-links ul li a{
     color: white;
     text-decoration: none;
     font-size: 13px;
+    //ändrar nav-links a färg och storlek, tarbort decoration.
 }
 .nav-links ul li::after{
     @include hover1;
+    //include hover1 från mixin
 }
 .nav-links ul li:hover::after{
     width: 100%;
+    //Lägger till en hover effekt efter man (Hover nav-links ul li)
 }
 .text1{
     width: 90%;
@@ -101,18 +114,22 @@ nav{
     left: 5%;
     bottom:30%;
     margin: auto;
+    //Ändrar position på text och centrerar den.
 }
 .text1 h1 {
     font-size: 40px;
+    //Storlek för text
 }
 .text1 p {
     margin: 10 0 40px;
     font-size: 14px;
+    //storlek för text i p
 }
 
  @media(max-width: 700px){
      .text1 h1{
          font-size: 40px;
+         //Storlek för text använder av media.
      }
  }
 
@@ -122,10 +139,13 @@ nav{
     margin: auto;
     color: pink;
     background-color: white;
+    //Använder mig av include mallpostion och mall för att skapa en mall färg och margin included. Som skapar space i mellan object
     
 }
 .mall1 p{
     @include ptext;
+    //Include ptext mixin
+
 
 }
 .color1{
@@ -133,9 +153,11 @@ nav{
     @include header;
     background: url(.//Imgs/Redbackground.jpg) no-repeat center center fixed;
     @include textfix;
+    //Include colors,header,textfix och lägger till background för color1 
 }
 .color1 p{
     @include ptext;
+    //Include ptext mixin
 }
 
 .color2{
@@ -143,35 +165,43 @@ nav{
     @include header;
     background: url(./Imgs/BlueBackground.jpg) no-repeat center center fixed;
     @include textfix;
+    //Include colors,header,textfix och lägger till background för color2
 }
 
 .color2 p{
     @include ptext;
+    //Include ptext mixin för p
 }
 .color3{
     @include colors;
     @include header;
     background: url(./Imgs/Yellowbackground.jpg) no-repeat center center fixed;
     @include textfix;
+    //Include colors,header,textfix och lägger till background för color3
 }
 .color3 p {
     @include ptext;
+    //Include ptext mixin
 }
 i{
     
     font-size: 40px;
     padding: 55px;
     left: 30px;
+    //ändrar postion för i och font size.
 }
 
 .mall1 h3{
     @include borderlast;
     left: 40px;
+    //Ändrar mall1 h3 texten också its postion include borderlast
+
     
 }
 .ocean p {
     @include borderlast;
     left: 15cm;
+    //ändrar ocean ptexten include borderlast och postion 
 }
 
 

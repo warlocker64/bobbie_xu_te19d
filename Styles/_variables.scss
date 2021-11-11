@@ -2,17 +2,21 @@
     display: flex;
     justify-content:center;
     align-items: center;
+    //fixar postion för ceneterar en mixin)
 }
 
 @mixin header {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
     position: relative;
+    //Postion även min height och textens style.
 }
 @mixin mall {
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 25vh;
     position: relative;
+    //Postion även min height och textens style.
+
 
     
 }
@@ -23,6 +27,7 @@
     margin: auto;
     text-align: center;
     padding-top: 100px;
+    //Postion fixar background auto margin och lägger text i center. Lägger padding på toppen även
     
 }
 @mixin mallposition {
@@ -32,11 +37,13 @@
     margin: auto;
     text-align: center;
     padding-top: 50px;
+    //postion för då mall och storlek, padding och text postion center.
     
 }
 @mixin ptext {
     width: 50%;
     margin: auto;
+    //storlek och margin 
     
 }
 @mixin textfix {
@@ -47,6 +54,7 @@
     -o-background-size: cover;
     background-size: cover;
     color: white;
+    //Background fix och färg för textfix mixin. med margin auto.
     
 }
 
@@ -58,11 +66,13 @@
     height: 2px;
     margin: auto;
     transition: 0.5s;
+    //Hover effekt för det som man ska ha på med en färg av silver och tratsition på 0.5s.
 
 }
 @mixin borderlast {
     border-top: solid;
     padding: 10px;
     position: absolute;
+    //Mixin med border på toppen och padding ändrar även psition absolute.
 }
  
