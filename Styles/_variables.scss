@@ -1,3 +1,22 @@
+@mixin display($type,$place,$place2) {
+    display:$type;
+    justify-content:$place;
+    align-items:$place2;
+    //testar andra typer av mixins. 
+}
+
+@mixin text($texttype,$height,$position) {
+    font-family:$texttype;
+    min-height: $height;
+    position: $position;
+}
+@mixin textfix($size,$dec,$color){
+    font-size: $size;
+    text-decoration: $dec;
+    color: $color;
+}
+
+
 @mixin test {
     display: flex;
     justify-content:center;
@@ -5,21 +24,7 @@
     //fixar postion för ceneterar en mixin)
 }
 
-@mixin header {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 100vh;
-    position: relative;
-    //Postion även min height och textens style.
-}
-@mixin mall {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    min-height: 25vh;
-    position: relative;
-    //Postion även min height och textens style.
 
-
-    
-}
 @mixin colors {
     position: absolute;
     background-size: cover;

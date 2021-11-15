@@ -11,7 +11,8 @@ div{
     //Tar i gruppen "Div" och placerar det "Relative"
 }
 .header{
-    @include header; //Lägger till Mixin
+
+    @include text('Segoe UI', Tahoma, Geneva, Verdana, sans-serif,100vh,relative);
     background: url('./Imgs/mainbackground.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -20,6 +21,7 @@ div{
     //Include header och sedan lägger till en background för "Header" även gör så att background täcker hela sidan.
 }
 .title a{
+    @include textfix(35px,none,black);
     text-decoration: none; //Tarbort decoration från texten i "Title a"
     color: black; //Färgen för texten a
     font-size: 35px; // Ändrar storlek för texten a
@@ -73,10 +75,8 @@ div{
     //Denna funktion expanar när man hover över (title a)
 }
 nav{
-    display: flex;
+    @include display(flex,space-between,center);
     padding: 2% 6%;
-    justify-content: space-between;
-    align-items: center;
     //Fixar position för Nav och centerar den. Även lägger till Padding
 }
 .nav-links{
@@ -86,16 +86,13 @@ nav{
 
 }
 .nav-links ul li{
+    @include display(inline-block,defualt,relative);
     list-style: none;
-    display: inline-block;
     padding: 8px 12px;
-    position: relative;
     //fixar nav links positions 
 }
 .nav-links ul li a{
-    color: white;
-    text-decoration: none;
-    font-size: 13px;
+    @include textfix(13px,none,white);
     //ändrar nav-links a färg och storlek, tarbort decoration.
 }
 .nav-links ul li::after{
@@ -135,7 +132,7 @@ nav{
 
  .mall1{
     @include mallposition;
-    @include mall;            
+    @include text('Segoe UI', Tahoma, Geneva, Verdana, sans-serif,25vh,relative);            
     margin: auto;
     color: pink;
     background-color: white;
@@ -150,7 +147,7 @@ nav{
 }
 .color1{
     @include colors;
-    @include header;
+    @include text('Segoe UI', Tahoma, Geneva, Verdana, sans-serif,100vh,relative);
     background: url(.//Imgs/Redbackground.jpg) no-repeat center center fixed;
     @include textfix;
     //Include colors,header,textfix och lägger till background för color1 
@@ -162,7 +159,7 @@ nav{
 
 .color2{
     @include colors;
-    @include header;
+    @include text('Segoe UI', Tahoma, Geneva, Verdana, sans-serif,100vh,relative);
     background: url(./Imgs/BlueBackground.jpg) no-repeat center center fixed;
     @include textfix;
     //Include colors,header,textfix och lägger till background för color2
@@ -174,7 +171,7 @@ nav{
 }
 .color3{
     @include colors;
-    @include header;
+    @include text('Segoe UI', Tahoma, Geneva, Verdana, sans-serif,100vh,relative);
     background: url(./Imgs/Yellowbackground.jpg) no-repeat center center fixed;
     @include textfix;
     //Include colors,header,textfix och lägger till background för color3
