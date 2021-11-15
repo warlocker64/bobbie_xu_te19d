@@ -1,0 +1,133 @@
+
+@import './variables'; //Import varibles.sccs i style.scss.
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url(Sam.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-animation: colorchange 20s infinite alternate;
+    @-webkit-keyframes colorchange{
+        0%{
+            color:blue;
+        }
+        10%{
+            color:red;
+        }
+        20%{
+            color:yellow;
+        }
+        30%{
+            color:green;
+        }
+        40%{
+            color:lime;
+        }
+        50%{
+            color:purple;
+        }
+        60%{
+            color:blue;
+        }
+        70%{
+            color:lightblue;
+        }
+        80%{
+            color:orange;
+        }
+        90%{
+            color:plum;
+        }
+        100%{
+            color:violet;
+        }
+
+    }
+}
+
+.free{
+    
+    @include align();
+    text-decoration: none;
+}
+.free-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    margin:auto;
+    transition: 0.5s;
+}
+.free-links ul li:hover::after{
+    width:100%;
+}
+.text1{
+    display: flex;
+    align-items: center;
+    justify-content: center
+    color: red;
+
+}
+.text2 {
+    @include text;
+    color: blue;
+}
+.text3 {
+    @include text;
+    color: yellow;  
+}
+.text4 {
+    @include text;
+    color: orange;
+}
+.text5 {
+    @include text;
+    color: green;
+}
+.text6 {
+    @include text;
+    color: plum;
+}
+
+
+
+.among1 {
+    @include amongborder;
+    background:red;
+    color: red;
+
+}
+.among2 {
+    @include amongborder;
+    background:blue;
+    color: blue;
+}
+.among3 {
+    @include amongborder;
+    background: yellow;
+    color: yellow;
+
+    
+
+}
+.among4 {
+    @include amongborder;
+    background:orange;
+    color:orange;
+}
+.among5 {
+    @include amongborder;
+    background: green;
+    color: green;
+}
+.among6 {
+    @include amongborder;
+    background: plum;   
+    color: plum;
+}
+.among7 {
+    @include amongborder;
+}
