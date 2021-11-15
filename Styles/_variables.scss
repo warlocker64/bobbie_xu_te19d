@@ -5,15 +5,21 @@
     //testar andra typer av mixins. 
 }
 
-@mixin text($texttype,$height,$position) {
-    font-family:$texttype;
+@mixin text($height,$position) {
     min-height: $height;
     position: $position;
 }
-@mixin textfix($size,$dec,$color){
+@mixin fontanddec($size,$dec,$color){
     font-size: $size;
     text-decoration: $dec;
     color: $color;
+}
+@mixin placement($font,$right,$left,$top,$bottom){
+    font-size: $font;
+    right: $right;
+    left: $left;
+    top: $top;
+    bottom: $bottom;
 }
 
 

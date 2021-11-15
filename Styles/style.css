@@ -16,9 +16,9 @@ div {
 }
 
 .title a {
+  font-size: 35px;
   text-decoration: none;
   color: black;
-  font-size: 35px;
   -webkit-animation: colorchange 20s infinite alternate;
 }
 
@@ -77,13 +77,13 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2% 6%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2% 6%;
 }
 
 .nav-links {
@@ -94,16 +94,21 @@ nav {
 }
 
 .nav-links ul li {
-  list-style: none;
   display: inline-block;
+  -webkit-box-pack: defualt;
+      -ms-flex-pack: defualt;
+          justify-content: defualt;
+  -webkit-box-align: relative;
+      -ms-flex-align: relative;
+          align-items: relative;
+  list-style: none;
   padding: 8px 12px;
-  position: relative;
 }
 
 .nav-links ul li a {
-  color: white;
-  text-decoration: none;
   font-size: 13px;
+  text-decoration: none;
+  color: white;
 }
 
 .nav-links ul li::after {
@@ -126,23 +131,38 @@ nav {
   color: white;
   position: absolute;
   text-align: center;
+  font-size: defualt;
+  right: defualt;
   left: 5%;
+  top: defualt;
   bottom: 30%;
   margin: auto;
 }
 
 .text1 h1 {
   font-size: 40px;
+  right: defualt;
+  left: defualt;
+  top: defualt;
+  bottom: defualt;
 }
 
 .text1 p {
   margin: 10 0 40px;
   font-size: 14px;
+  right: defualt;
+  left: defualt;
+  top: defualt;
+  bottom: defualt;
 }
 
 @media (max-width: 700px) {
   .text1 h1 {
-    font-size: 40px;
+    font-size: defualt;
+    right: defualt;
+    left: 40px;
+    top: defualt;
+    bottom: defualt;
   }
 }
 
@@ -233,22 +253,33 @@ nav {
 }
 
 i {
-  font-size: 40px;
   padding: 55px;
-  left: 30px;
+  font-size: 40px;
+  right: defualt;
+  left: 50px;
+  top: defualt;
+  bottom: defualt;
 }
 
 .mall1 h3 {
   border-top: solid;
   padding: 10px;
   position: absolute;
+  font-size: defualt;
+  right: defualt;
   left: 40px;
+  top: defualt;
+  bottom: defualt;
 }
 
 .ocean p {
   border-top: solid;
   padding: 10px;
   position: absolute;
-  left: 15cm;
+  font-size: defualt;
+  right: defualt;
+  left: 16cm;
+  top: defualt;
+  bottom: defualt;
 }
 /*# sourceMappingURL=style.css.map */

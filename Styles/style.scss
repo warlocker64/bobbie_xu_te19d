@@ -11,8 +11,8 @@ div{
     //Tar i gruppen "Div" och placerar det "Relative"
 }
 .header{
-
-    @include text('Segoe UI', Tahoma, Geneva, Verdana, sans-serif,100vh,relative);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    @include text(100vh,relative);
     background: url('./Imgs/mainbackground.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -21,10 +21,7 @@ div{
     //Include header och sedan lägger till en background för "Header" även gör så att background täcker hela sidan.
 }
 .title a{
-    @include textfix(35px,none,black);
-    text-decoration: none; //Tarbort decoration från texten i "Title a"
-    color: black; //Färgen för texten a
-    font-size: 35px; // Ändrar storlek för texten a
+    @include fontanddec(35px,none,black);
     -webkit-animation: colorchange 20s infinite alternate;
     @-webkit-keyframes colorchange{
         0%{
@@ -92,7 +89,7 @@ nav{
     //fixar nav links positions 
 }
 .nav-links ul li a{
-    @include textfix(13px,none,white);
+    @include fontanddec(13px,none,white);
     //ändrar nav-links a färg och storlek, tarbort decoration.
 }
 .nav-links ul li::after{
@@ -108,31 +105,31 @@ nav{
     color: white;
     position: absolute;
     text-align: center;
-    left: 5%;
-    bottom:30%;
+    @include placement(defualt,defualt,5%,defualt,30%);
     margin: auto;
     //Ändrar position på text och centrerar den.
 }
 .text1 h1 {
-    font-size: 40px;
+    @include placement(40px,defualt,defualt,defualt,defualt);
     //Storlek för text
 }
 .text1 p {
     margin: 10 0 40px;
-    font-size: 14px;
+    @include placement(14px,defualt,defualt,defualt,defualt);
     //storlek för text i p
 }
 
  @media(max-width: 700px){
      .text1 h1{
-         font-size: 40px;
+        @include placement(defualt,defualt,40px,defualt,defualt);
          //Storlek för text använder av media.
      }
  }
 
  .mall1{
     @include mallposition;
-    @include text('Segoe UI', Tahoma, Geneva, Verdana, sans-serif,25vh,relative);            
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    @include text(25vh,relative);            
     margin: auto;
     color: pink;
     background-color: white;
@@ -147,7 +144,8 @@ nav{
 }
 .color1{
     @include colors;
-    @include text('Segoe UI', Tahoma, Geneva, Verdana, sans-serif,100vh,relative);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    @include text(100vh,relative);
     background: url(.//Imgs/Redbackground.jpg) no-repeat center center fixed;
     @include textfix;
     //Include colors,header,textfix och lägger till background för color1 
@@ -159,7 +157,8 @@ nav{
 
 .color2{
     @include colors;
-    @include text('Segoe UI', Tahoma, Geneva, Verdana, sans-serif,100vh,relative);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    @include text(100vh,relative);
     background: url(./Imgs/BlueBackground.jpg) no-repeat center center fixed;
     @include textfix;
     //Include colors,header,textfix och lägger till background för color2
@@ -171,7 +170,8 @@ nav{
 }
 .color3{
     @include colors;
-    @include text('Segoe UI', Tahoma, Geneva, Verdana, sans-serif,100vh,relative);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    @include text(100vh,relative);
     background: url(./Imgs/Yellowbackground.jpg) no-repeat center center fixed;
     @include textfix;
     //Include colors,header,textfix och lägger till background för color3
@@ -182,22 +182,22 @@ nav{
 }
 i{
     
-    font-size: 40px;
     padding: 55px;
-    left: 30px;
+    @include placement(40px,defualt,50px,defualt,defualt);
     //ändrar postion för i och font size.
 }
 
 .mall1 h3{
     @include borderlast;
-    left: 40px;
+    @include placement(defualt,defualt,40px,defualt,defualt);
+    
     //Ändrar mall1 h3 texten också its postion include borderlast
 
     
 }
 .ocean p {
     @include borderlast;
-    left: 15cm;
+    @include placement(defualt,defualt,16cm,defualt,defualt);
     //ändrar ocean ptexten include borderlast och postion 
 }
 
