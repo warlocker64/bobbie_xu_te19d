@@ -12,7 +12,7 @@ div{
 }
 .header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    @include text(100vh,relative);
+    @include text(100vh,relative); //lägger till mixin text som mini-height och postion (relative)
     background: url('./Imgs/mainbackground.jpg') no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -72,7 +72,7 @@ div{
     //Denna funktion expanar när man hover över (title a)
 }
 nav{
-    @include display(flex,space-between,center);
+    @include display(flex,space-between,center);//En mixin som heter display har postion flex och justifiy content (spacebetween) align-items(center)
     padding: 2% 6%;
     //Fixar position för Nav och centerar den. Även lägger till Padding
 }
@@ -83,7 +83,7 @@ nav{
 
 }
 .nav-links ul li{
-    @include display(inline-block,defualt,relative);
+    @include display(inline-block,defualt,relative);//en mixin med display funktionen har lagt defult när en del av mixin inte används.
     list-style: none;
     padding: 8px 12px;
     //fixar nav links positions 
@@ -101,10 +101,8 @@ nav{
     //Lägger till en hover effekt efter man (Hover nav-links ul li)
 }
 .text1{
-    width: 90%;
-    color: white;
-    position: absolute;
-    text-align: center;
+    @include fontanddec(defualt,defualt,center,white);//läger mixin fontanddec med default som inte används och center med white color.
+    @include background(absolute,defualt,defualt,90%);//Läger till include background som en mixin postion som absolute och width som 90%.
     @include placement(defualt,defualt,5%,defualt,30%);
     margin: auto;
     //Ändrar position på text och centrerar den.
@@ -145,7 +143,7 @@ nav{
 .color1{
     @include colors;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    @include text(100vh,relative);
+    @include text(100vh,relative);//Include text mixn.
     background: url(.//Imgs/Redbackground.jpg) no-repeat center center fixed;
     @include textfix;
     //Include colors,header,textfix och lägger till background för color1 
@@ -158,7 +156,7 @@ nav{
 .color2{
     @include colors;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    @include text(100vh,relative);
+    @include text(100vh,relative);//Inlcude text mixin.
     background: url(./Imgs/BlueBackground.jpg) no-repeat center center fixed;
     @include textfix;
     //Include colors,header,textfix och lägger till background för color2
@@ -171,7 +169,7 @@ nav{
 .color3{
     @include colors;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    @include text(100vh,relative);
+    @include text(100vh,relative);//include mixin 
     background: url(./Imgs/Yellowbackground.jpg) no-repeat center center fixed;
     @include textfix;
     //Include colors,header,textfix och lägger till background för color3
@@ -183,13 +181,13 @@ nav{
 i{
     
     padding: 55px;
-    @include placement(40px,defualt,50px,defualt,defualt);
+    @include placement(40px,defualt,50px,defualt,defualt);//Include placement mixin
     //ändrar postion för i och font size.
 }
 
 .mall1 h3{
     @include borderlast;
-    @include placement(defualt,defualt,40px,defualt,defualt);
+    @include placement(defualt,defualt,40px,defualt,defualt);//Include placement mixin
     
     //Ändrar mall1 h3 texten också its postion include borderlast
 
@@ -197,7 +195,7 @@ i{
 }
 .ocean p {
     @include borderlast;
-    @include placement(defualt,defualt,16cm,defualt,defualt);
+    @include placement(defualt,defualt,16cm,defualt,defualt);//Include placement mixin
     //ändrar ocean ptexten include borderlast och postion 
 }
 

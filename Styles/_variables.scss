@@ -2,17 +2,20 @@
     display:$type;
     justify-content:$place;
     align-items:$place2;
-    //testar andra typer av mixins. 
+    //Lägger till display,justify-content även align-items. Allt detta som (display)
 }
 
-@mixin text($height,$position) {
+@mixin heightandposition($height,$position) {
     min-height: $height;
     position: $position;
+    //läger till min-height and position som heightandpostion. 
 }
-@mixin fontanddec($size,$dec,$color){
+@mixin fontanddec($size,$dec,$align,$color){
     font-size: $size;
     text-decoration: $dec;
+    text-align: $align;
     color: $color;
+    //lägger till fontsize textdec och colors som fontanddec
 }
 @mixin placement($font,$right,$left,$top,$bottom){
     font-size: $font;
@@ -20,17 +23,27 @@
     left: $left;
     top: $top;
     bottom: $bottom;
+    //Lägger till fontsize right left top and bottom för att kunna välja vart man ska lägga ett object(Placement)
 }
-
-
-@mixin test {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    //fixar postion för ceneterar en mixin)
+@mixin Paddingandmargin($padding,$paddingtop,$paddingbottom,$margin) {
+    padding: $padding;
+    padding-top: $paddingtop;
+    padding-bottom: $paddingbottom;
+    margin: $margin;
+    //Skpar en padding funktion som man kan använda för att ändra padding top och padding, bottom och även margin.
 }
-
-
+@mixin background($placement,$size,$color,$width) {
+    position: $placement;
+    background-size: $size;
+    background:$color;
+    width: $width;
+    //Lägger till (background) postion backgroundsize, color för background och width.
+}
+@mixin displayandcontent($display,$content) {
+    display:$display;
+    content: $content;
+    //En mixin som har display och concent. Som kallas för display content.
+}
 @mixin colors {
     position: absolute;
     background-size: cover;
@@ -41,6 +54,15 @@
     //Postion fixar background auto margin och lägger text i center. Lägger padding på toppen även
     
 }
+@mixin test {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    //fixar postion för ceneterar en mixin)
+}
+
+
+
 @mixin mallposition {
     position: absolute;
     background-size: cover;
