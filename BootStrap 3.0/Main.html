@@ -1,42 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.css">
+    <script src="Tetris.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TooSee I Swear Im Deadbaby</title> 
 </head>
-<body>  
-    <nav class="navbar navbar-expand-md navbar-light bg-light"> <!--Tar Klassen från Boostrap för att skapa en Navbar.-->
-    <a class="navbar-brand" href="#">GameStore</a> <!--Klassen navbar-brand används för att skapa en länk från bootstrap.-->
-    <!-- Lägger in massa Klasser från bootstrap och lägger dom in i "Button" gör även button responsive med hjälp av klasser från bootstrap--><button 
-    class = "navbar-toggler"
-    type = "button"
-    data-bs-toggle="collapse"
-    data-bs-target="#toggleMobilMenu"
-    aria-controls="toggleMobilMenu"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!--Tar Klassen från Boostrap för att skapa en Navbar.-->
+        <div class="container-fluid">
+          <a class="navbar-brand animate__animated animate__bounce" href="#">GamerStore</a> <!--Klassen navbar-brand används för att skapa en länk från bootstrap.-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><!--Collapse gömmer content och är gjort för när sidan blir mindre så man kan ta ner den som en meny.-->
+            <span class="navbar-toggler-icon"></span><!--navbar icon för när sidan blir mobile size.-->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Games
+                </a>
+                <ul class="dropdown-menu bg-light text-dark dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown"><!-- Lägger in massa Klasser från bootstrap och lägger dom in i "Button" gör även button responsive med hjälp av klasser från bootstrap-->
+                  <li><a class="dropdown-item" href="#">Tetris</a></li>
+                  <li><a class="dropdown-item" href="#">Flappybird</a></li>
+                  <li><a class="dropdown-item" href="#">1010!</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">This Website Is Sponsored By Steamers</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <section
+      class="bg-dark text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
     >
-    <span class = "navbar-toggler-icon"></span> <!--navbar icon för när sidan blir mobile size.-->
-    </button>
-    <div class = "collapse navbar-collapse" id= "toggleMobileMenu"> <!--Collapse gömmer content och är gjort för när sidan blir mindre så man kan ta ner den som en meny.-->
-        <ul class = "navbar-nav text-center">
-            <li>
-                
-                <a class= "nav-link" href="#">Tetris</a>
+      <div class="container">
+        <div class="d-sm-flex align-items-center justify-content-between">
+          <div>
+            <h1>Discover: <span class="text-warning"> The Game Tetris </span></h1>
+            <p class="lead my-3 "> <!--Denna klass Är som padding, Använder mig av denna för att texten inte ska vara så klumpig -->
+                Its graphics are simple, and its rules are straightforward: rotate fast-dropping puzzle pieces on your computer screen to fit together and create solid lines — which then disappear. Repeat ad infinitum.
 
-            </li>
-            <li>
-                <a class= "nav-link" href="#">Flappybird</a>
+                "Tetris," the hugely popular and addictive game that swept the world in the 1980s and 1990s, continues to engage and captivate players today. Unlike the majority of products developed during the early boom years of video game design, "Tetris" was a no-frills outlier: no fancy images, no memorable characters and no narrative.
                 
-            </li>
-            <li>
-                <a class= "nav-link" href="#">3 In a Row</a>
+                But while the game may be uncomplicated, the story of how it came to dominate the gaming industry and bewitch millions of people around the world is quite the opposite. The tale is rife with handshake deals, game industry rivalries, and tense negotiations between Western executives and Soviet officials during the last decade of the Cold War, when relations between the USSR and countries in the West were anything but friendly. [7 Weird Facts About Tetris]
                 
-            </li>
+                In a new nonfiction graphic novel titled "Tetris: The Games People Play" (First Second, Oct. 2016), writer and illustrator Box Brown fits together the puzzle pieces that describe the explosive gaming-world takeover of "Tetris," uncovering the unique historical circumstances in world politics and the nascent gaming industry that made the "Tetris" story so unique.
+            </p>
+            
+            <button
+              class="btn btn-primary btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#enroll"
+              
+            >
+            - Play Tetris Now -
+        </button>
+          </div>
+          <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block tetris-img " src="./Pics/Tetris.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block tetris-img" src="./Pics/tetris2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block tetris-img" src="./Pics/tetris3.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          
+          
+        
+        </div>
+      </div>
+    </section>
+    <nav class="navbar navbar-expand-md navbar-light bg-dark">
+      </nav>
+      
+      <div class="container text-center ">
+        <h1 class="mt-5 text-white fw-light">The First game</h1>
+        <p class="lead text-white-50">The earliest known board games are 5,000 years old and were played by the Egyptians. ... The Chinese invented their first known board game in 200 B.C., and, in Western Europe, they were playing Tafl (a game very similar to chess) from 400 B.C</p>
+      </div>
+      <div class="h-100 d-flex flex-row justify-content-center align-items-center">
+  <h3 class="badge bg-primary align-self-center ">Flex item 1</h3>
+  <h3 class="badge bg-primary">Flex item 2</h3>
+  <h3 class="badge bg-primary">Flex item 3</h3>
+</div>
+      
 
-        </ul>
-    </div>
 </body>
