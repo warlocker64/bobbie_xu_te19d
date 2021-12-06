@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <script src="Tetris.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        
+        <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+        
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+        />
+        
+        <link rel="stylesheet" href="css/mdb.min.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TooSee I Swear Im Deadbaby</title> 
+</head>
+<body class= "bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!--Tar Klassen från Boostrap för att skapa en Navbar.-->
+        <div class="container-fluid">
+          <a class="navbar-brand animate__animated animate__bounce" href="https://www.youtube.com/watch?v=AWOyEIuVzzQ&ab_channel=ApicalShark">
+            <img src="https://cdn-icons-png.flaticon.com/512/566/566312.png" width="50" height="50" alt="">
+          </a>
+          <a class="navbar-brand animate__animated animate__bounce" href="https://www.youtube.com/watch?v=AWOyEIuVzzQ&ab_channel=ApicalShark">GamerStore</a> <!--Klassen navbar-brand används för att skapa en länk från bootstrap.-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><!--Collapse gömmer content och är gjort för när sidan blir mindre så man kan ta ner den som en meny.-->
+            <span class="navbar-toggler-icon"></span><!--navbar icon för när sidan blir mobile size.-->
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Main.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Games
+                </a>
+                <ul class="dropdown-menu bg-light text-dark dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown"><!-- Lägger in massa Klasser från bootstrap och lägger dom in i "Button" gör även button responsive med hjälp av klasser från bootstrap-->
+                  <li><a class="dropdown-item" href="Tetris.html">Tetris</a></li>
+                  <li><a class="dropdown-item" href="Flappy.js">Flappybird</a></li>
+                  <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=3ExGuHWdXCE&ab_channel=FazlijaOfficial">PacMan</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">This Website Is Sponsored By Steamers</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      </section>
+      <section
+      class="bg-dark text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+    <section class="text-center bg-dark">
+        <h4 class="mb-5 "><strong> GamerStore: About Us </strong></h4> <!--Här skapas 3 bilder med text och buttons. använder mig av bg-dark på det flesta för att få dark theme.Skapar även buttons. Buttons har även en hover effect när man hover över den--> 
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card bg-dark">
+              <div class="bg-dark bg-image hover-overlay ripple bg-dark" data-mdb-ripple-color="light">
+                <img
+                  src="./Pics/Yes.png"
+                  class="img-fluid"
+                />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body bg-dark">
+                <h5 class="card-title bg-dark">The Orgin</h5>
+                <p class="card-text">
+                    GamerStore traces its roots to Babbage's, a Dallas, Texas-based software retailer founded in 1984 by former Harvard Business School classmates James McCurry and Gary M. Kusin.
+                </p>
+                <a href="https://www.youtube.com/watch?v=-2Rr5Yv4qNA&ab_channel=JamesStanford" class="btn btn-primary">- Klick To See More -</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-dark col-lg-4 col-md-6 mb-4">
+            <div class="card bg-dark ">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img
+                  src="./Pics/top.jpg"
+                  class="img-fluid"
+                />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">The Peek</h5>
+                <p class="card-text">
+                    What started off as a small platform for Valve to provide updates to its games has turned into the largest computer gaming platform in the world. In September 2021, Steam reached a peak of over 26.09 million concurrent users. The platform's record was from May 2021, peaking at 26.85 million concurrent users.
+                </p>
+                <a href="https://www.youtube.com/watch?v=K-zAtDL4WWY&ab_channel=TB3TM" class="btn btn-primary">- Klick To See More -</a>
+              </div>
+            </div>
+          </div>
+
+          <div class=" bg-dark col-lg-4 col-md-6 mb-4">
+            <div class="card bg-dark">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img
+                  src="./Pics/Rat.jpg"
+                  class="img-fluid"
+                />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body bg-dark">
+                <h5 class="card-title"> The Present</h5>
+                <p class="bg-dark card-text text-light">
+                    From legendary game creator Hideo Kojima comes an all-new, genre-defying experience. Sam Bridges must brave a world utterly transformed by the Death Stranding. Carrying the disconnected remnants of our future in his hands, he embarks on a journey to reconnect the shattered world one step at a time.
+                </p>
+                <a href="https://www.youtube.com/watch?v=tjEmRGj-WoQ&ab_channel=TonyGunk" class="btn btn-primary">- Klick To See More -</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+
+      <hr class="my-5" />
+
+
+    </section>
+
+    <footer class="bg-dark text-center text-white">
+        <!-- Här lägger man till icons med länk funtioner och är en button-->
+        <div class="container p-4 pb-0">
+         
+          <section class="mb-4">
+           
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+      
+            
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+      
+            
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+      
+            
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+      
+          
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            
+            <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+
+            
+          </section>
+          <section>
+            <div class="row">
+              <div class="col-md-6 gx-5 mb-4">
+                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                  <img src="./Pics/among s.png" class="img-fluid" />
+                  <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                  </a>
+                </div>
+              </div>
+  
+              <div class="col-md-6 gx-5 mb-4">
+                <h4><strong>The Footer</strong></h4>
+                <p class="text-muted">
+                    The footer should fall at the bottom of the overall site hierarchy. (That is where it is located after all.) The footer should also contain a hierarchy of elements within its “container.” The most important elements (often contact information, call to action or site map) should be the most prominent
+                </p>
+                <p><strong>Whats is next?</strong></p>
+                <p class="text-muted">
+                    Among Us was inspired by the live party game Mafia, and the science fiction horror film The Thing. The idea for the concept was originally given by Marcus Bromander, co-founder of Innersloth, who had played Mafia since he was a kid.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          
+         
+        </div>
+        
+      
+        <!--bara lägger till copyright text på slutet av footer med länk och background för att belyssa den.-->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2021 Copyright:
+          <a class="text-white" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">FortniteBurger.net</a>
+        </div>
+        
+      </footer>
+      

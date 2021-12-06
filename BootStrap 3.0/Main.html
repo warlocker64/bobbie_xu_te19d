@@ -5,6 +5,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+    <!--Länkar alla bootstrap och css även all javascript-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="bootstrap.css">
     <script src="Tetris.js"></script>
@@ -16,42 +17,53 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+        
+        <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+        
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
+        
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+        />
+        
+        <link rel="stylesheet" href="css/mdb.min.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TooSee I Swear Im Deadbaby</title> 
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!--Tar Klassen från Boostrap för att skapa en Navbar.-->
-        <div class="container-fluid">
-          <a class="navbar-brand animate__animated animate__bounce" href="#">
-            <img src="https://cdn-icons-png.flaticon.com/512/566/566312.png" width="50" height="50" alt="">
+        <div class="container-fluid"> <!-- Lägger till klassen container fluid mellan navbar som gör så att Navbaren blir mer responsive-->
+          <a class="navbar-brand animate__animated animate__bounce" href="https://www.youtube.com/watch?v=AWOyEIuVzzQ&ab_channel=ApicalShark"> <!--Lägger till klassen navbar-brand med en animation bounce Länkar även den-->
+            <img src="https://cdn-icons-png.flaticon.com/512/566/566312.png" width="50" height="50" alt=""> <!--Lägger till icon -->
           </a>
-          <a class="navbar-brand animate__animated animate__bounce" href="#">GamerStore</a> <!--Klassen navbar-brand används för att skapa en länk från bootstrap.-->
+          <a class="navbar-brand animate__animated animate__bounce" href="https://www.youtube.com/watch?v=AWOyEIuVzzQ&ab_channel=ApicalShark">GamerStore</a> <!--Klassen navbar-brand används för att skapa en länk från bootstrap.-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><!--Collapse gömmer content och är gjort för när sidan blir mindre så man kan ta ner den som en meny.-->
             <span class="navbar-toggler-icon"></span><!--navbar icon för när sidan blir mobile size.-->
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent"> <!--Navbar Respnosive-->
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="Main.html">Home</a> <!--Skapar länkar vid navbaren använder mig av li och ul för bättre struktur.-->
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="About.html">About</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown"> <!--Skapar en meny för navbar -->
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Games
                 </a>
-                <ul class="dropdown-menu bg-light text-dark dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown"><!-- Lägger in massa Klasser från bootstrap och lägger dom in i "Button" gör även button responsive med hjälp av klasser från bootstrap-->
-                  <li><a class="dropdown-item" href="#">Tetris</a></li>
-                  <li><a class="dropdown-item" href="#">Flappybird</a></li>
-                  <li><a class="dropdown-item" href="#">PacMan</a></li>
+                <ul class="dropdown-menu bg-light text-dark dropdown-menu dropdown-menu-end animate slideIn" aria-labelledby="navbarDropdown"><!--Här skaps meny med li och sedan lägger man till animation för en smoother drop down meny -->
+                  <li><a class="dropdown-item" href="Tetris.html">Tetris</a></li>
+                  <li><a class="dropdown-item" href="Flappybird.html">Flappybird</a></li>
+                  <li><a class="dropdown-item" href="https://www.youtube.com/watch?v=3ExGuHWdXCE&ab_channel=FazlijaOfficial">PacMan</a></li>
                 </ul>
-              </li>
+              </li><!--Lägger till en next som har en fade effect för att lägga till en sponsoredship.-->
               <li class="nav-item">
                 <a class="nav-link disabled">This Website Is Sponsored By Steamers</a>
               </li>
-            </ul>
+            </ul> <!-- Här skapas en search bar och en search button-->
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Search</button>
@@ -63,6 +75,7 @@
       <section
       class="bg-dark text-dark p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
     >
+    <!--Skapar en Ny container med en flexbox med text och lägger en jusitfy content för att lägga mellanrum använder mig av "Text warining för att göra texten ljusare Skapar en button som är länkad till tetris.html använder mig även av klasser för att ändra button  "-->
       <div class="container">
         <div class="d-sm-flex align-items-center justify-content-between">
           <div>
@@ -77,15 +90,13 @@
                 In a new nonfiction graphic novel titled "Tetris: The Games People Play" (First Second, Oct. 2016), writer and illustrator Box Brown fits together the puzzle pieces that describe the explosive gaming-world takeover of "Tetris," uncovering the unique historical circumstances in world politics and the nascent gaming industry that made the "Tetris" story so unique.
             </p>
             
-            <button
-              class="btn btn-primary btn-lg"
-              data-bs-toggle="modal"
-              data-bs-target="#enroll"
-              
-            >
-            - Play Tetris Now -
-        </button>
+            <a href="./Tetris.html" class="btn btn-primary btn-lg data-bs-toggle="modal
+                data-bs-target="#enroll">- Play Tetris Now -</a>
+            
+          
+        
           </div>
+          <!-- Här Skapar jag en slider image med 3 bilder använder mig av egen css för att resize bilden.-->
           <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -113,30 +124,30 @@
     
       
       <div class="container text-center  ">
-        
+        <!-- Detta är inprincip samma sak som den första men använder mig av annan kod för att kunna lägga bilden bakom och texten framför med även en större button-->
         <h1 class="mt-5">Flappy: The Worst Bird</h1>
         <p class="lead text-white-50">Flappy Bird received poor reviews from some critics, who criticized its high level of difficulty and alleged plagiarism in graphics and game mechanics, while other reviewers found it addictive. At the end of January 2014, it was the most downloaded free game in the App Store for iOS.</p>
         sec
         
-          <div class="container-only">
+          <div class="container-only"><!--Egen css för resizing-->
             <div class="left"></div>
             <div class="right">
               <div class="content">
-                <h1>Discover: <span class="text-warning"> The Game Flappybird </span></h1>
+                <h1>Discover: <span class="text-warning"> The Game Flappybird </span></h1> <!-- Text med warning igen -->
                 <p>Nguyen had created a simple game in which the player controls a funny-looking bird by tapping the screen, and it needed a simple name. He called it Flap Flap, until he realized another app had the same title. Luckily, developing and updating games on the App Store is such a fast, iterative process that he was able to quickly retitle it Flappy Bird.</p>
-                <a href="#" class="btn btn-primary btn-lg data-bs-toggle="modal
-                data-bs-target="#enroll">- Play FlappyBird Now -</a>
+                <a href="./Flappybird.html" class="btn btn-primary btn-lg data-bs-toggle="modal
+                data-bs-target="#enroll">- Play FlappyBird Now -</a> <!-- Nästan samma button men större pågrund av en av klasserna--> 
               </div>
             </div>
           </div>
           <h1 class="mt-5">Pacman: The Best  Bird</h1>
           <p class="lead text-white-50">In 1980 the Japanese arcade game manufacturer Namco Limited introduced the world to Pac-Man. The lead designer was Iwatani Tohru, who intended to create a game that did not emphasize violence.</p>
           sec
-        <section id="learn" class="bg-dark text-dark p-0 p-lg-0 pt-lg-5 text-center text-sm-start">
+        <section id="learn" class="bg-dark text-dark p-0 p-lg-0 pt-lg-5 text-center text-sm-start"> <!--Skapar en bild med imgfluid så den är bra scaled och sedan har en hover effect när man hover över en viss del av bilden så spelar den upp ett clip-->
           <div class="container bg-dark text-dark p-5 p-lg-5 pt-lg-5 text-center text-sm-start">
             <div class="row align-items-center justify-content-between">
               <div class="col-md">
-                <video class="videoPreview img-fluid" onloadstart="this.volume=0.1" src="./Pics/Driptohard.mp4" poster= "Pics/pacman.png">Your browser does not support the video tag.</video>
+                <video class="videoPreview img-fluid" onloadstart="this.volume=0.1" src="./Pics/Driptohard.mp4" poster= "Pics/pacman.png">Your browser does not support the video tag.</video> <!--Med Volum och poster som väljer bilden-->
               </div>
               <div class="col-md p-5">
                 <h1>Discover: <span class="text-warning"> The Game PacMan </span></h1>
@@ -147,7 +158,8 @@
                   Instead, players maneuvered through a simple maze with a joystick, devouring coloured dots until all were gone, thereby completing a level and moving on to the next maze. In Japanese slang, paku paku describes the snapping of a mouth open and shut, and thus the central character, resembling a small pizza with a slice cut out for the mouth, was given the name Pac-Man. The game was made challenging by a group of four “ghosts” on each level that tried to catch and consume Pac-Man; the roles of predator and prey were temporarily reversed when Pac-Man ate special “power pills” placed in the maze.
                 </p>
                 <a href="#" class="btn btn-primary btn-lg data-bs-toggle="modal>
-                  <i class="bi bi-chevron-right"></i> - Play PacMan Now -
+                  <i class="bi bi-chevron-right"></i> - (V I P ONLY) Play PacMan Now
+                   -
                 </a>
               </div>
             </div>
@@ -170,45 +182,51 @@
         </script>
   </body>
 
-<footer class="footer">
-    <div class="row">
-      <div class="footer-col">
-        <h4>company</h4>
-        <ul>
-          <li><a href="#">about us</a></li>
-          <li><a href="#">our services</a></li>
-          <li><a href="#">privacy policy</a></li>
-          <li><a href="#">affiliate program</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>get help</h4>
-        <ul>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">shipping</a></li>
-          <li><a href="#">returns</a></li>
-          <li><a href="#">order status</a></li>
-          <li><a href="#">payment options</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>online shop</h4>
-        <ul>
-          <li><a href="#">watch</a></li>
-          <li><a href="#">bag</a></li>
-          <li><a href="#">shoes</a></li>
-          <li><a href="#">dress</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>follow us</h4>
-        <div class="social-links">
-          <a href="#"><i class="fab fa-facebook-f"></i></a>
-          <a href="#"><i class="fab fa-twitter"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-      </div>
+  <footer class="bg-dark text-center text-white">
+    <!-- Skapar Grid Container  -->
+    <div class="container p-4 pb-0">
+    <!-- Här lägger man till icons med länk funtioner och är en button-->
+      
+      <section class="mb-4">
+       
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+      
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+  
+        
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+     
     </div>
-  </div>
-</footer>
+    
+  
+    <!--bara lägger till copyright text på slutet av footer med länk och background för att belyssa den.-->
+    
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-white" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley">FortniteBurger.net</a>
+    </div>
+    
+  </footer>
