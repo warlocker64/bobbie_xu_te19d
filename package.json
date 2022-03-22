@@ -1,0 +1,19 @@
+{
+  "name": "bobbie_xu_te19d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/warlocker64/bobbie_xu_te19d.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/warlocker64/bobbie_xu_te19d/issues"
+  },
+  "homepage": "https://github.com/warlocker64/bobbie_xu_te19d#readme"
+}
